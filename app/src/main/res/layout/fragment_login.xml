@@ -9,27 +9,45 @@
     android:orientation="vertical"
     tools:context=".login">
 
-    <EditText
-        android:id="@+id/username_et"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:hint="Username"
+        android:textAlignment="center"
         android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        android:minHeight="48dp">
 
-    <EditText
-        android:id="@+id/password_et"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginTop="25dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:hint="Password"
+        android:textAlignment="center"
         android:inputType="numberPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login_btn"
